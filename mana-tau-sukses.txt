@@ -1,0 +1,198 @@
+@apiiuw
+
+Soal Teori
+
+1. Tentukan struktur data dari data-data nama, nim, alamat beserta panjang karakternya
+Jawab :
+nama varchar(30)
+nim int(10)
+alamat varchar(50)
+ 
+ 
+2. Saat anda mendeklarasikan tipe data, ternyata tipe data tersebut tidak sesuai dengan kebutuhan. Jika anda mendapatkan hal seperti ini apa yang anda lakukan
+Jawab :
+Merubah tipe data dengan syntax “ALTER TABLE namaTabel MODIFY COLUMN namaKolom tipeData(panjangKarakter);” apabila lingkungan pengembangan menggunakan SQL berbasis CLI (Command Line Interface). Namun, jika menggunakan GUI, dapat langung merubah tipe data pada menu yang tersedia.
+ 
+3. Tentukan operasi struktur data yang sesuai untuk mengoperasikan string
+Jawab :
+-   CONCAT, menggabungkan string.
+-   UPPER, mengkapitalisasi karakter (menjadi huruf besar).
+-   LOWER, mendekapitalisasi karakter (menjadi huruf kecil).
+-   SUBSTRING, memangkas string.
+-   LENGTH, menghitung panjang string.
+ 
+4. Jika saudara akan membuat rancangan mockup hal apa saja yang perlu saudara siapkan
+Jawab :
+    a.  Melakukan wawancara dengan user terkait tampilan yang akan dibuat.
+    b.  Membuat dokumen kebutuhan pengguna.
+    c.  Mengolah dokumen kebutuhan menjadi poin permasalahan.
+    d.  Mencari solusi untuk menyelesaikan tiap kebutuhan user.
+    e.  Membuat alur pengguna dan diagram pendukung lainnya.
+    f.  Membuat mockup.
+ 
+5. Tentukan komponen desain interface apa saja yang diperlukan jika anda akan menghasilkan
+nilai akhir mata kuliah dengan data masukan nilai uts dan uas
+Jawab :
+    -   Tata letak elemen.
+    -   Tag HTML yang sesuai dengan fungsinya.
+    -   Form yang berisi input box berformat number untuk nilai UTS dan UAS.
+    -   Alert (Peringatan) apabila input tidak berupa angka/number.
+    -   Trigger berupa tombol submit yang memanggil fungsi hitung nilai.
+    -   Elemen HTML (Text Field) untuk menampung nilai akhir.
+ 
+6. Dalam membuat simulasi program ada hal yang tidak sesuai, apakah yang akan ada lakukan
+jika anda menemukan hal tersebut
+Jawab :
+Melakukan debug untuk menemukan error dan mencari penyebabnya, lalu memperbaiki error tersebut sampai mendapat hasil yang       dibutuhkan. Untuk meningkatkan efisiensi, dapat melihat error code ataupun dengan bantuan Linter agar proses perbaikan menjadi lebih cepat.
+ 
+7. Apabila saudara membuat program ternyata ditemukan eror program oleh debugging tool yang
+saudara gunakan. Apa yang saudara lakukan untuk memperbaiki eror program?
+Jawab :
+    -   Melihat log program/console.
+    -   Mengidentifikasi detail dari error tersebut.
+    -   Melihat baris kode yang menyebabkan masalah.
+    -   Mengganti blok/baris kode yang bermasalah.
+    -   Melakukan testing ulang sampai mendapat hasil yang sesuai.
+8. Tentukan langkah kerja untuk melakukan perhitungan rata rata dari 3 nilai?
+    Jawab :
+    1.  Membuat tiga fungsi input user untuk masing – masing nilai.
+    2.  Memasukkan nilai dari ketiga input tersebut kedalam variabel.
+    3.  Membuat variabel hasil dengan hasil hitung rata- rata ketiga nilai tersebut.
+    4.  Membuat fungsi output untuk menampilkan hasil kepada user.
+ 
+9. Jika saudara ingin membuat table barang dengan spesifikasi kode barang, nama barang, satuan, dan stok, namun terjadi kesalahan. Apa yang saudara lakukan sehingga tabel barang sesuai yang
+diinginkan?
+Jawab :
+Jika lingkungan pengembangan menggunakan CLI, maka saya akan menggunakan syntax ALTER TABLE untuk memperbaiki kesalahan, namun apabila menggunakan GUI, maka kesalahan dapat langsung diperbaiki menggunakan menu yang ada.
+ 
+    ● Tipe data VARCHAR pada field satuan harus didefinisikan Panjang karakternya
+    contoh VARCHAR(50).
+    ● Field stok dengan tipe data NUMBER harus memiliki tanda koma “,” dan
+    mempunyai panjang karakternya contoh NUMBER(5) sebelum mengetikkan
+    perintah selanjutnya yang mana mendefinisikan PRIMARY KEY.
+    ● Penulisan PRIMARY KEY tidak menggunakan “_” dan untuk mendefinisikan
+    mana yang menjadi PRIMARY KEY perlu ditulis dengan dibuka dan ditutup
+    oleh tanda kurung. Dimana dapat ditulis langsung dengan PRIMARY KEY
+    (kode_barang)
+ 
+10. Apa yang anda lakukan sehingga menghasilkan kode program yang efisien dan sesuai dengan
+guidelines?
+Jawab :
+    ● syntax {echo "harga barang : Rp.$bayar,";} diubahh menjadi echo "harga
+    barang : Rp.$bayar,"; yaitu dengan menghapuskan tanda kurung kurawal “{}”
+    ● syntax
+    if($bayar >= 500000){
+    $diskon=(($bayar*27)/100);
+    }
+    $total_bayar=($bayar-$diskon);
+    echo "$bilangan2";
+    echo "<p>;
+    echo "total bayar dengan diskon : Rp. $total_bayar,"
+    }elseif($bayar <=500000)
+    {echo "anda tidak mendapat diskon";}
+    ?>
+    diubah menjadi
+    if($bayar >= 500000) {
+    $diskon=($bayar*27)/100;
+    $total_bayar=($bayar-$diskon);
+    echo "$bilangan2";
+    echo "<p>";
+    echo "total bayar dengan diskon : Rp. $total_bayar,"
+    } else {
+    echo "anda tidak mendapat diskon";
+    }
+    ?>
+    adapun yang diperbaiki adalah penempatan kurung kurawal “{}” dan
+    penambahan tanda kutip.
+ 
+ 
+ 
+11. Saat saudara mendefinisikan struktur kontrol, kondisi yang saudara buat tidak sesuai berjalan
+dengan baik. Apa yang saudara lakukan?
+Jawab :
+    -   Melihat log program/console untuk memastikan apakah terjadi error.
+    -   Melakukan evaluasi pada hasil program.
+    -   Melakukan evaluasi pada argumen yang menjadi parameter struktur kontrol.
+    -   Melakukan evaluasi pada struktur kontrol secara sintaksis.
+    -   Menyesuaikan algoritma struktur kontrol dengan alur program.
+    -   Membuat perbaikan pada bagian struktur kontrol yang bermasalah.
+    -   Melakukan testing ulang pada program.
+ 
+12. Saat anda melakukan pemanggilan fungsi namun fungsi tersebut tidak berjalan apa yang
+saudara lakukan
+    -   Melihat log program/console untuk mengidentifikasi error yang terjadi.
+    -   Mengevaluasi argumen yang menjadi parameter fungsi tersebut.
+    -   Mengevaluasi algoritma yang diterapkan pada fungsi.
+    -   Mengevaluasi kode program pada fungsi secara sintaksis.
+    -   Menyimpulkan hasil evaluasi.
+    -   Melakukan perbaikan pada fungsi tersebut.
+    -   Melakukan testing ulang pada program.
+ 
+ 
+13. Apakah saudara dapat menggunakan kode program yang berasal dari kode program lain dan
+apa keuntungannya
+Jawab :
+Saya dapat menggunakan kode program lain yang memiliki algoritma atau langkah yang serupa untuk digunakan dalam program saya. Akan tetapi, kode tersebut perlu disesuaikan dengan program yang akan dibuat, penyesuaian dapat berupa perubahan nama variabel ataupun penambahan/pengurangan jumlah argumen/parameter. Hal tersebut akan mengurangi pengulangan penulisan kode dan membuat waktu pengerjaan menjadi lebih singkat.
+ 
+14. Bagaimana pertimbangan anda membuat prosedur dan function
+Berikut adalah hal yang perlu diperhatikan dalam membuat prosedur dan fungsi : 
+    -   Reusability
+    -   Complexity
+    -   Readability
+    -   Separation of Concern (Memecah program menjadi beberapa fungsi sesuai tujuannya).
+ 
+15. Kapankah saudara membutuhkan debuging tools pada saat saudara melakukan pembuatan Program
+Jawab : 
+Debugging tools digunakan dalam mencari dan mengidentifikasi bug atau error yang terdapat pada program serta bertujuan untuk    mempermudah perbaikan pada error/bug tersebut, terutama dalam pembuatan program atau aplikasi berskala besar dan kompleks.
+ 
+ 
+SOAL PRAKTEK
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nilai Mahasiswa Aplikasi Berbasis WEB</title>
+    </head>
+    <body>
+        <h1>Nilai Mahasiswa Aplikasi Berbasis WEB</h1>
+        <form  method="POST">
+            <label> Masukkan Nilai Ujian Tengah Semester(UTS) : </label>
+            <input name="uts" type="number" required><br/>
+            <label> Masukkan Nilai Ujian Akhir Semester(UAS) : </label>
+            <input name="uas" type="number" required><br/>
+            <button type="submit" name="getFinalScore">Input</button>
+        </form>
+        <br/>
+ 
+        <?php
+ 
+            if(isset($_POST['getFinalScore'])){
+ 
+                $uts = $_POST['uts'];
+                $uas = $_POST['uas'];
+ 
+                $final = (($uts*0.4)+($uas*0.6));
+ 
+                if($final >= 80){
+                    $index = 'A';
+                }elseif($final >= 70){
+                    $index = 'B';
+                }elseif($final >= 50){
+                    $index = 'C';
+                }elseif($final >= 40){
+                    $index = 'D';
+                }elseif($final < 40){
+                    $index = 'Gagal';
+                }
+    
+                echo "Nilai UTS :  $uts  <br/>";
+                echo "Nilai UAS :  $uas <br/>";
+                echo "Nilai Akhir : $final <br/>";
+                echo "Nilai Indeks :  $index <br/>";
+    
+            }
+  
+ 
+        ?>
+    </body>
+</html>
